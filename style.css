@@ -1,0 +1,85 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+}
+
+.main{
+    height: 338px;
+    width: 319px;
+    margin-top: 80px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+h1{
+    margin-left: 90px;
+    margin-bottom: -27px;
+    color: brown;
+}
+
+input{
+    display: none;
+}
+
+.main .wrapper{
+    height: 270px;
+    width: 270px;
+    display: flex; 
+    border: 25px solid rgb(212, 163, 115);
+    border-radius: 10px;
+    background-color: brown;
+    flex-wrap: wrap;
+}
+
+.wScreen{
+    height: 270px;
+    width: 270px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-size: 20px;
+    border: 25px solid rgb(212, 163, 115);
+    background: rgba(165, 42, 42, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    position: absolute;
+    top: 18px;
+    margin: auto;
+    transform: translateY(-110%);   /* start hidden above like shutter */
+    transition: transform 0.5s ease; 
+}
+.wScreen.show {
+    transform: translateY(0);       /* slide down like window shutter */
+}
+.Play{
+    margin-top: 20px;
+    padding: 20px 10px;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgb(212, 163, 115);
+    border: 1px solid ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button{
+    height: 90px;
+    width: 90px;
+    background-color: rgb(250, 237, 205);
+    border: 1px solid green;
+    border-radius: 10px;
+    font-size: 50px;
+    color:black;
+}
+
+button:hover{
+    background-color: azure;
+    cursor: pointer;
+}
